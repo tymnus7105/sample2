@@ -1,0 +1,180 @@
+/* common */
+body{
+  margin: 0;
+}
+a{
+  display: block;
+}
+.btn{
+  text-decoration: none;
+  padding: 8px 0;
+  background-color: #329e00;
+  color:white;
+  border-radius: 4px;
+  width: 140px;
+  text-align: center;
+}
+h1,p,h2{
+  margin: 0;
+}
+.container{
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* header */
+header .container{
+  display: flex;
+  align-items: center;
+  padding:16px 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+header .btn{
+  margin-right: 32px;
+}
+
+/* main */
+main{
+  
+}
+
+main h1{
+  font-size: 24px;
+  color: #22577a;
+  font-weight: normal;
+}
+.topp{
+  line-height: 1.6;
+  padding-top: 8px;
+  padding-bottom: 64px;
+  font-size: 20px;
+}
+main .container{
+  text-align: center;
+  background-color: #99e6ff;
+  background-image: url(img/bg.png);
+  background-position: center bottom;
+  background-repeat:repeat-x;
+  padding-top: 64px;
+}
+main .btn{
+  margin: 0 auto;
+
+}
+.mainimg{
+  vertical-align: bottom;
+  padding-top: 64px;
+}
+.explain{
+  text-align: center;
+}
+.explain h1{
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 40px;
+}
+.explain img{
+  padding: 32px;
+}
+.explain h2{
+  font-size: 24px;
+  color: #22577a;
+  font-weight: normal;  
+  padding-bottom: 16px;
+}
+p + p {
+  padding-top: 16px;
+  line-height: 1.8;
+  padding-bottom: 64px;
+}
+section + section{
+  margin-top: 40px;
+}
+.voice{
+  background-color: #99e6ff;
+  padding-bottom: 64px;
+}
+.voice h1{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+.voice section{
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 16px;
+}
+.user{
+  display: flex;
+  padding-top: 16px;
+}
+.user p{
+  align-self: end;
+  padding-left: 8px;
+}
+.mainbottom{
+  text-align: center;
+}
+.mainbottom .btn{
+  margin: 0 auto;
+}
+footer{
+  background-color: #323435;
+  font-size: 16px;
+  color:#eee;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media (min-width:800px){
+  main .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .mainimg{
+    padding: 0 16px;
+  }
+  .explain section{
+    display: flex;
+  }
+  .explain img{
+    width: 50%;
+  }
+
+  .main-flex{
+    align-self: center;
+    width: 50%;
+  }
+  .explain > section:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+  .bottom-flex{
+    display: flex;  
+  }
+  .bottom-flex section{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media(min-width:1000px){
+  header .container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main .explain{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main .voice{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  main .bottom-flex{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
